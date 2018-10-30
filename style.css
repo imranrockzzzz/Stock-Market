@@ -1,0 +1,52 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background: #ffff;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+.jumbotron{
+	background: black;
+}
+#showlastprice
+{
+  float: left;
+  
+
+}
+#slider_2{
+	background: white;
+}
+#showchange
+{
+ float: right;
+}
+#container{
+	border-radius: 5px;
+}
+#site_slide{
+	background-color: #fff;
+}
+
+#news_feed{
+	background: #FFFFF4;
+	margin-top: -2%;
+}
+#tables{
+	background: white;
+}
+header{
+	background: url('A.jpg') repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	margin-top: -2%;
+}

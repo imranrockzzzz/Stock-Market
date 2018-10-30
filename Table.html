@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Dhaka Stock Exchange</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ <script type="text/javascript"">
+  var url='http://www.dsebd.org/latest_share_price_all.php';
+  var proxy='https://cors-anywhere.herokuapp.com/';
+  $(document).ready(function(){
+   $.ajax({
+    url: proxy+url,
+    complete: function(data){
+     
+     $('#here').html(data.responseText);
+     $('#site_slide').html($('#here').find('table'));
+     $('table').attr("border", "0");
+                    
+     setTimeout(remove, 500);
+     
+
+     }
+   });
+    
+  });
+
+   </script>
+ <style type="text/css">
+  table{
+   width: 100%;
+   height: 70%;
+   border-color: red;
+   border-radius: 1px;
+  }
+ </style>
+</head>
+<body>
+  
+  <div id="here2" style="display: none"></div>
+  <div id="site" style=""></div>  
+ <div id="here" style="display: none"></div>
+ <div class="jumbotron" id="slider_2">
+ <div id="site_slide" style=""></div>
+</div>
+</body>
+</html>
